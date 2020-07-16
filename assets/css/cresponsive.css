@@ -1,0 +1,87 @@
+/*Responsive*/
+@media  (max-width: 1024px) {
+
+    /*about*/
+ 
+    
+    .about{
+        margin-top: 0px;
+		height: 750px;
+    }
+    .aboutText{
+        margin-top: 30px;
+		width: 35%;
+    }
+	
+
+    footer{
+        width: 100%;
+    }
+}
+
+
+/* ========== Mobile ========== */
+
+@media screen and (max-width: 756px) {
+
+
+    /* about */
+
+    .about{
+        margin-top: 0px;
+		height: 650px;
+		flex-direction: column;
+    }
+	.aboutList{
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	ol{
+	margin-top: 20px;
+	}
+	ol li{
+		margin-bottom: 10px;
+	}
+
+
+    /* footer */
+	footer{
+		height: 230px;
+		width: 100%; 
+	}
+	.end{
+		width: 100%;
+	}
+    .footer-contact {
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px 10px 20px;
+        border-radius: 6px;
+		height: 150px;
+		float: left;
+    }
+
+    .judul-contact {
+        text-align: center;
+        padding-bottom: 10px;
+       
+    }
+
+    .footer-contact h5 {
+        font-size: 16px;
+    }
+
+    /* copyright */
+    .copyright {
+        /*margin-top: 300px;*/
+        height: 50px;
+        line-height: 50px;
+        background-color: #ff5e6c;
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        font-size: 2.5vw;
+    }
+}

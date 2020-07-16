@@ -1,0 +1,228 @@
+/*Responsive*/
+@media  (max-width: 1024px) {
+
+    /*Landing Page*/
+    .landing {
+        flex-direction: column-reverse;
+        height: 120vh;
+        padding-top: 50px;
+        /* padding-bottom: 100px; */
+        
+        /* align-items: center; */
+        /* justify-content: left; */
+        /* text-align: center; */
+    }
+
+    .landingText h1 {
+        font-size: 5vw;
+        margin: 0 !important;
+    }
+
+    .landingText h3 {
+        font-size: 20px;
+    }
+
+    .landingText .btn {
+        margin: 0 auto;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .landingText .btn a {
+        font-size: 2vw;
+    }
+
+    .landingImage img {
+        width: 80vw;
+        padding-top: 30px;
+    }
+    
+    .about{
+        padding-top: 10px;
+        height: 160vh;
+        flex-direction: column;
+        margin-bottom: -70px;
+    }
+
+    .aboutText{
+        margin-top: 50px;
+    }
+    /* Info Section */
+
+    .container-card{
+        width: auto;
+        height: auto;
+    }
+
+    
+    .cards{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card{
+        width:50%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .card button{
+        margin-bottom: 50px;
+    }
+    
+    .pers{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profill {
+        margin-left: 0;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ========== Mobile ========== */
+
+@media screen and (max-width: 756px) {
+    /* nav {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    nav h4 {
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 14px;
+    }
+
+    nav .links a {
+        margin-right: 25px;
+        font-size: 16px;
+        font-weight: 600;
+    } */
+.menu{
+	margin-top: 0px;
+    display: none;
+}
+
+.menu-icon{
+    display: block;
+}
+.cover{
+    height: 0 auto;
+    
+}
+.container{
+    margin-top: 250px;
+    margin-right:4% ;
+}
+.btn_sign_up{
+    display: block;
+    margin:0px 0px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+
+    /*Landing Page*/
+    .landing {
+        flex-direction: column-reverse;
+        height: 750px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .landingText h1 {
+        font-size: 8vw;
+        margin: 0 !important;
+    }
+
+    .landingText h3 {
+        font-size: 16px;
+    }
+
+    .landingText .btn {
+        margin: 0 auto;
+        margin-top: 30px;
+        float: none;
+    }
+
+    .landingText .btn a {
+        font-size: 3vw;
+    }
+
+    .landingImage img {
+        width: 50vw;
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+
+
+    /* about */
+
+    .about{
+        margin-top: 100px;
+    }
+	.aboutList{
+		margin-bottom: 20px;
+		width: 75%;
+	}
+
+
+    /* footer */
+	footer{
+		height: 230px;
+		width: 100%; 
+	}
+	.end{
+		width: 100%;
+	}
+    .footer-contact {
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px 10px 20px;
+        border-radius: 6px;
+		height: 150px;
+		float: left;
+    }
+
+    .judul-contact {
+        text-align: center;
+        padding-bottom: 10px;
+       
+    }
+
+    .footer-contact h5 {
+        font-size: 16px;
+    }
+
+    /* copyright */
+    .copyright {
+        /*margin-top: 300px;*/
+        height: 50px;
+        line-height: 50px;
+        background-color: #ff5e6c;
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        font-size: 2.5vw;
+    }
+}

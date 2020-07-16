@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth;
+}
+
+/*  Bagian Header */
+.header {
+    width: 100%;
+    /* overflow: hidden; */
+    background-color:rgba(241, 241, 241, 0.8);
+    padding: 10px 10px;
+    position: fixed;
+    z-index: 5;
+   
+    
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+}
+
+.header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+}
+
+.header a:hover {
+    background-color: #f1f1f1;
+    color: #ff5e6c;
+}
+
+.header a.active {
+    background-color: #f1f1f1;
+    color: #ff5e6c;
+}
+
+.header-right {
+    float: right;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.cover{
+    background-color: #ffaaab; 
+    /* margin-top: 50px; */
+    /*background-image: url(img/3980908.jpg);*/
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 750px;
+    background-position: center center;
+    box-shadow: 0px 1px 20px rgba(41, 41, 41, 0.3);
+    /* border: 1px solid green; */
+}
+.coverImage{
+	width: 128px;
+	float: right;
+}
+.container{
+    margin-top: 230px;
+    margin-left: 4%;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color:#fff5d7;
+    text-shadow: 1px 1px 2px rgba(41, 41, 41, 0.6);
+}
+
+.container h1 span{
+    font-weight: 300;
+    color:#ff5e6c;
+}
+
+.btn_sign_up{
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color:#ff5e6c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+}
+
+.btn_sign_up span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn_sign_up span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 25px;
+}
+
+.btn_sign_up:hover span{
+    padding-right: 25px;
+}
+.btn_sign_up:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+
+/* Landing Page */
+.landing {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly !important; */
+    align-items: center;
+    padding: 0 10vw;
+    background-color: #fff;
+	height: 750px;
+    /* border: 2px solid red; */
+}
+.landingText{
+    
+    margin-right: 30px;
+}
+.landingText h1 {
+    font-size: 5vw;
+    margin: 0 !important;
+}
+
+.landingText h5 {
+    margin: 6px !important;
+    font-size: 20px;
+    opacity: 0.3;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.landingImage img {
+    width: 28vw;
+    /* border: 2px solid red; */
+}
+.landingImg img {
+    width: 28vw;
+	margin-left: 120px;
+    /* border: 2px solid red; */
+}
+.landingImgg img {
+    width: 23vw;
+	margin-left: 250px;
+    /* border: 2px solid red; */
+}
+.landing th{
+	text-align: left;
+}
+.landing li{
+	list-style: none;
+}
+
+/*About CSS*/
+.about{
+    
+    height: 500px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+	
+    /* border: 2px solid yellow; */
+}
+.aboutText{
+    position: relative;
+	float: left;
+    padding: 50px 50px;
+    height: inherit;
+}
+.aboutText h1{
+    position: relative;
+    left: 110px;
+}
+.aboutText img{
+    width: 30vw;
+    position: relative;
+	float: left;
+    top: 20px;
+}
+.aboutList{
+    width: 50%;
+	float: right;
+}
+ol{
+    list-style: none;
+    color: #ff5e6c;
+	margin-top: 60px;
+}
+ol li{
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+li p{
+    font-size: 16px;
+    color: #000;
+    padding-left: 60px;
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+li span{
+    position: absolute;
+    line-height: 25px;
+    font-size: 600;
+	border-bottom: 1px solid #ebebeb;
+}
+ul{
+	list-style: none;
+}
+
+/* Section Card */
+.container-card{
+    width: 100%;
+    height : 600px;
+    background-color: fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-card h1{
+    margin: 20px 0;
+    color: #ff5e6c;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 25%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 30px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px 5px 20px 5px;
+    padding : 10px;
+}
+
+.card h2{
+    margin-top: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.card h3{
+    line-height: 30px;
+    text-align: center;
+    color:#ff5e6c;
+    opacity: 0.7;
+}
+
+.card button{
+    height: 40px;
+    width: 40px;
+    border:0;
+    border-radius: 40px;
+    margin-top:10px;
+    margin-left: 80%;
+    font-weight: 300;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color:#ffaaab;
+}
+
+
+/* footer content */
+footer{
+    height: 150px;
+    width: 100%;
+    margin: 20px 20px 0px auto;
+	background-color: #ffaaab; 
+}
+.end{
+	color: #fff;
+	padding: 20px;
+	width: 70%;
+	float: left;
+}
+.end h5{
+	font-size: 3vw;
+}
+
+.footer-contact {
+    padding-top: 10px;
+	float: right;
+	padding-left: 20px;
+}
+
+.footer-contact .judul-contact{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer-contact a{
+    margin-right: 10px;
+}
+
+.icon {
+    display: flex;
+    /*justify-content: space-between;
+     width: 100px;
+    display: block;
+    border: 1px solid red; */
+}
+.icon h5 {
+    font-size: 14px;
+    font-weight: normal;
+	text-align: left;
+}
+
+.icon a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+/* footer copyright*/
+.copyright {
+    height: 50px;
+    line-height: 50px;
+    background-color: #ff5e6c;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
